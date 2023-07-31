@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="body__product">
+			<div id="products"></div>
+			<div id="addBasket">
+				<div id="popBasket">
+					<div class="add__div">
+						<p class="add__basket"></p>
+					</div>
+					<div class="discription__flex">
+						<img src="" alt="" class="product__img" />
+						<div>
+							<p class="discription__basket"></p>
+							<button class="btn-cross">x</button>
+							<p class="price__basket"></p>
+						</div>
+					</div>
+					<button class="basket__check">Перейти в корзину</button>
+				</div>
+			</div>
+			<div id="order__product">
+				<div id="popOrder">
+					<h3 class="discription__order"></h3>
+					<div class="order_comm">
+						<div>
+							<img src="" alt="" class="order__img" />
+							<p class="price__order"></p>
+						</div>
+						<p>Комментарий к заказу:</p>
+						<textarea
+							id="myTextarea"
+							name="myTextarea"
+							rows="4"
+							cols="50"
+						></textarea
+						><br />
+					</div>
+					<div class="phone__flex">
+						<p>Ваш телефон *:</p>
+						<input type="text" />
+					</div>
+					<button class="order__send">Отправить</button>
+				</div>
+			</div>
+		</div>
+		<script src="../api/products.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
 </html>
